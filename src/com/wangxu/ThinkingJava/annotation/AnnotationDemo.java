@@ -9,7 +9,7 @@ public class AnnotationDemo {
             Method method = cla.getMethod("test");
             if (method.isAnnotationPresent(MyAnnotation.class)) {
                 MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);
-                System.out.println(annotation.sex());
+                System.out.println(annotation.gender());
                 System.out.println(annotation.age());
             }
 
@@ -20,8 +20,4 @@ public class AnnotationDemo {
         }
     }
 
-    @MyAnnotation
-    public void test() {
-
-    }
 }

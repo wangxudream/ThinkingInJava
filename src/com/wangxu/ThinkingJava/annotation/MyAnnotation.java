@@ -13,18 +13,10 @@ public @interface MyAnnotation {
 
     int age() default 18;
 
-    Sex sex() default Sex.MAN;
-
-    Class cla() default Car.class;
-
+    Gender gender() default Gender.MAN;
 
     /**
      * 注解元素类型包括1、基本类型 2、String 3、枚举 4、Class 5、注解
      */
-
 }
 
-
-class Car {
-
-}
